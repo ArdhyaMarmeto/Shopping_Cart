@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background-color: #e9ecef;
+    /* background-color: #e9ecef; */
 }
 
 .hero-text {
@@ -28,22 +28,44 @@ header {
 
 .hero-text h1 {
     font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    left: 300px;
     margin: 0;
+    
 }
 
 .hero-text p {
     font-size: 1.2rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    left: 300px;
 }
 
-.hero-image img {
+.hero-image img{
     width: 50%;
     border-radius: 10px;
     animation: fadeInRight 1s ease-out;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .logo img {
     width: 80px;
@@ -59,10 +81,6 @@ h1 {
 }
 
 main {
-    /* display: flex; */
-    /* justify-content:; */
-    /* padding: 2rem; */
-    /* flex-wrap: wrap;  */
 }
 
  #cart {
@@ -74,12 +92,12 @@ main {
     font-weight: 900;
     position: relative;
     left: 690px;
+    color: white;
+    font-size: 30px;
 }
 #products {
     border-right: 2px solid #ddd;
     padding-right: 1rem;
-    /* position: absolute; */
-    /* display: flex; */
 }
 
 h2 {
@@ -87,9 +105,6 @@ h2 {
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
-.list-div{
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -233,36 +248,133 @@ label {
     padding: 0.2rem;
 }
 
-@media (max-width: 768px) {
-    main {
+@media (max-width: 1200px) {
+    #hero {
         flex-direction: column;
+        text-align: center;
     }
 
-    #products, #cart {
+    .hero-text, .hero-image {
         width: 100%;
+        text-align: center;
+        position: relative;
+        left: 0;
+    }
+
+    .hero-text h1, .hero-text p {
+        left: 0;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cart {
+        width: 90%;
+    }
+
+    .fas {
+        left: 0;
+    }
+
+    #products {
         border-right: none;
-        padding-right: 0;
-        margin-bottom: 2rem;
+        padding: 0;
+    }
+
+    ul {
+        padding: 0;
+        width: 100%;
+    }
+
+    li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero {
+        padding: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    #cart {
+        width: 100%;
+    }
+
+    .fas {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    input[type="number"], select, #filter-price {
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    header {
-        font-size: 1.5rem;
+    .logo img {
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: 27px;
+        top: 10px;
+        border-radius: 10px;
+    }
+    .fas {
+        font-weight: 900;
+        position:relative;
+        left: 90px;
+    }
+    .hero-text h1 {
+        font-size: 1.8rem;
     }
 
-    #products, #cart {
-        width: 100%;
-        padding: 1rem;
+    .hero-text p {
+        font-size: 0.9rem;
     }
 
-    li {
+    #cart {
+        margin-top: 1rem;
+    }
+
+    .quantity-controls {
         flex-direction: column;
-        align-items: flex-start;
     }
 
-    li img {
-        margin-bottom: 1rem;
+    .quantity-controls input, .quantity-controls button {
+        margin-bottom: 0.5rem;
+    }
+
+    button {
+        width: 100%;
     }
 }
 
