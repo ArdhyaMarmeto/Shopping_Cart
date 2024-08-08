@@ -2,18 +2,18 @@
 
 // Initial dummy products
 const products = [
-    { id: 1, name: "Wireless Mouse", image: "images/wireless-mouse.jpg", price: 29.99 },
-    { id: 2, name: "Keyboard", image: "images/keyboard.jpg", price: 49.99 },
-    { id: 3, name: "Monitor", image: "images/monitor.jpg", price: 199.99 },
-    { id: 4, name: "USB Flash Drive", image: "images/usb-flash-drive.jpg", price: 15.49 },
-    { id: 5, name: "Webcam", image: "images/webcam.jpg", price: 59.99 },
-    { id: 6, name: "Laptop Stand", image: "images/laptop-stand.jpg", price: 39.99 },
-    { id: 7, name: "Headphones", image: "images/headphones.jpg", price: 89.99 },
-    { id: 8, name: "Smartphone", image: "images/smartphone.jpg", price: 499.99 },
-    { id: 9, name: "Tablet", image: "images/tablet.jpg", price: 299.99 },
-    { id: 10, name: "External Hard Drive", image: "images/external-hard-drive.jpg", price: 79.99 },
-    { id: 11, name: "Printer", image: "images/printer.jpg", price: 149.99 },
-    { id: 12, name: "Router", image: "images/router.jpg", price: 99.99 }
+    { id: 1, name: "Wireless Mouse", image: "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/7/y/7ya11pa.png", price: 29.99 },
+    { id: 2, name: "Keyboard", image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MK2A3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1628010471000", price: 49.99 },
+    { id: 3, name: "Monitor", image: "https://5.imimg.com/data5/SELLER/Default/2023/5/309805696/PR/NQ/KT/16384543/hd-computer-monitor-1000x1000.jpg", price: 199.99 },
+    { id: 4, name: "USB Flash Drive", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/SanDisk-Cruzer-USB-4GB-ThumbDrive.jpg/1920px-SanDisk-Cruzer-USB-4GB-ThumbDrive.jpg", price: 15.49 },
+    { id: 5, name: "Webcam", image: "https://5.imimg.com/data5/SELLER/Default/2021/9/SW/GW/TD/32454731/enter-web-camera-1000x1000.jpg", price: 59.99 },
+    { id: 6, name: "Laptop Stand", image: "https://symplify.in/cdn/shop/products/Wooden-Laptop-Stand-Opt3-3_947x947.jpg?v=1658253933", price: 39.99 },
+    { id: 7, name: "Headphones", image: "https://as1.ftcdn.net/v2/jpg/05/95/78/78/1000_F_595787852_efGpIfJmAJxcof7PBsQsDmirsZ3R8o50.jpg", price: 89.99 },
+    { id: 8, name: "Smartphone", image: "https://img.freepik.com/free-vector/realistic-display-smartphone-with-different-apps_52683-30241.jpg?t=st=1723093757~exp=1723097357~hmac=8a10b21c31c831ed7c3bdbeae0536df7c7f1c6c6c3bd335d6db46c9943a98990&w=740", price: 499.99 },
+    { id: 9, name: "Tablet", image: "https://as2.ftcdn.net/v2/jpg/00/69/95/57/1000_F_69955782_MH7ECJHzrtJL3KK1BtcnOZU7KOs34qVH.jpg", price: 299.99 },
+    { id: 10, name: "External Hard Drive", image: "https://quizizz.com/_media/quizzes/a163b5b5-c077-49cc-9b6d-f8b266c137f3_900_900", price: 79.99 },
+    { id: 11, name: "Printer", image: "https://media.istockphoto.com/id/171574641/photo/inkjet-printer.jpg?s=2048x2048&w=is&k=20&c=w4VOZRYkwJ-GcButHyBJlbFFSEMH3V7xIATXxXn5l2I=", price: 149.99 },
+    { id: 12, name: "Router", image: "https://st2.depositphotos.com/1187563/7649/i/950/depositphotos_76493923-stock-photo-old-style-photo-3d-modern.jpg", price: 99.99 }
 ];
 
 // Initial empty cart
